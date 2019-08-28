@@ -1,0 +1,22 @@
+{
+  "name": "bc_api",
+  "version": "1.0.0",
+  "description": "1. **Name**: The name of your product as a string.\r 2. **Price**: How much the items costs in number format.\r 3. **Type**:\r    1. **Physical**: Anything that is shipped to the customer, such as a t-shirt.\r    2. **Digital**: Products that the customer downloads, such as a PDF of an ebook.\r 4. **Weight**: How much the product weighs as a number. The measurement unit is determined by the store settings.\r 5. **Category**: The {category_id} for the category this product belongs to. An item can be assigned to more than one category. You can /GET the category id by using:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhlchu/BC_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhlchu/BC_API/issues"
+  },
+  "homepage": "https://github.com/jhlchu/BC_API#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  }
+}
