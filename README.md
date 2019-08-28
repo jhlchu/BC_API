@@ -76,10 +76,13 @@ Category:
 performer
 label: MGM
 storage location
-categories: {{category_id}}
+
 
 
 ```{layout_file}```?
+
+```categories: {{category_id}}```?
+
 ```
 "hidden"
 	upc: {string}
