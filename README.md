@@ -10,12 +10,18 @@
 
 ```
 {
-	"name": "Dvoak Cello",
+	"name": "Dvorak Cello",
+	"inventory_level": 0,
+	"inventory_warning_level": 2,
+	"inventory_tracking": "product",
+
+	"is_visible": false,
+
+
 	"price": 65.00,
-	cost_price: ,
-	retail_price: ,
-	sale_price: ,
-	brand_id
+	"cost_price": 32.00,
+	"retail_price": 65.00,
+	
 	"type": "physical",
 	"fixed_cost_shipping_price":,
 
@@ -29,7 +35,63 @@
 	"categories": [
 		{{category_id}}
 	],
-	condition: "New",
+	"condition": {group_sid==93 ? 'Used' : 'New'},
+	"search_keywords": "Dvoark,Cello,{brand},{genre},{split on whitespace}",
+	"is_condition_shown": true,
+	"custom_fields": [
+		{
+			"name": "Genre",
+			"value": {string}
+		},
+		{
+			"name": "Source",
+			"value": {string}
+		},
+		{
+			"name": "Label",
+			"value": {string},
+		},
+		{
+			"name": "Artist",
+			"value": {string}
+		},
+		{
+			"name": "MediaAmount",
+			"value": {int}
+		},
 
+	],
+	"date_created": {Date.now().toLocaleString()},
+	"date_modified": {Date.now().toLocaleString()},
+	"images": array[object],
+
+	"brand_id": {int},
 }
+```
+Category:
+- Source: e.g. clearaudio
+- 
+
+
+performer
+label: MGM
+storage location
+categories: {{category_id}}
+
+
+```{layout_file}```?
+```
+"hidden"
+	upc: {string}
+	is_featured: {boolean}
+	availibilty: {string}
+		Availability of the product.
+		Availability options are:
+			available - the product can be purchased on the storefront;
+			disabled - the product is listed in the storefront, but cannot be purchased;
+			preorder - the product is listed for pre-orders.
+		sort_order: {int}
+			Priority to give this product when included in product lists on category pages and in search results. Lower integers will place the product closer to the top of the results.
+	variant: array[object],
+	sales_price: ,
 ```
